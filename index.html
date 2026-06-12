@@ -1,0 +1,170 @@
+<div class="contenedor-app">
+
+ 
+
+ <img src="https://i.pinimg.com/236x/14/98/65/149865913a001a54963569947cffc1ba.jpg" alt="Logo del Negocio" class="foto-perfil" id="logo">
+
+ 
+
+ <h1 class="titulo">ARMYS</h1>
+
+ <p class="bio">solo de armys  💜</p>
+
+
+
+ <div class="caja-enlaces">
+
+   <a href="https://teleticket.com.pe/" target="_blank" class="btn-enlace">📲 bolestos para conciertos </a>
+
+   <a href="https://www.instagram.com/?hl=es" target="_blank" class="btn-enlace">📸 Nuestro Instagram</a>
+
+   <a href="https://share.google/8JxscR5hXkShI480B" target="_blank" class="btn-enlace">📍 Ubicación en Tienda</a>
+
+ </div>
+
+
+
+ <button id="btn-promocion">🎁 Revelar Promo del Día</button>
+
+
+
+</div>
+body {
+
+ background-color: #FFBFBF; /* Fondo general */
+
+ font-family: 'Segoe UI', sans-serif;
+
+ display: flex;
+
+ justify-content: center;
+
+ align-items: center;
+
+ min-height: 100vh;
+
+ margin: 0;
+
+}
+
+
+
+.contenedor-app {
+
+ background-color: white; /* Fondo de la tarjeta */
+
+ width: 100%;
+
+ max-width: 350px;
+
+ padding: 30px;
+
+ border-radius: 20px; /* Bordes redondeados de la tarjeta */
+
+ text-align: center;
+
+ box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+}
+
+
+
+.foto-perfil {
+
+ width: 120px;
+
+ border-radius: 50%; /* 50% hace que la imagen sea un círculo perfecto */
+
+ border: 4px solid purple; /* Grosor y color del borde de la foto */
+
+}
+
+
+
+/* --- DISEÑO DE LOS BOTONES DE ENLACE --- */
+
+.btn-enlace {
+
+ display: block;
+
+ background-color: transparent;
+
+ color: black; /* Color de las letras */
+
+ border: 2px solid purple; /* Borde del botón */
+
+ padding: 12px;
+
+ margin-bottom: 15px;
+
+ border-radius: 10px;
+
+ text-decoration: none; /* Quita la línea de subrayado de los links */
+
+ font-weight: bold;
+
+ transition: all 0.3s; /* Transición suave */
+
+}
+
+
+
+/* Efecto al pasar el mouse por encima (Hover) */
+
+.btn-enlace:hover {
+
+ background-color: purple;
+
+ color: white;
+
+}
+
+
+
+/* --- DISEÑO DEL BOTÓN DE PROMOCIÓN --- */
+
+#btn-promocion {
+
+ width: 100%;
+
+ background-color: #ff4757;
+
+ color: white;
+
+ padding: 15px;
+
+ border: none;
+
+ border-radius: 10px;
+
+ font-weight: bold;
+
+ cursor: pointer;
+
+ margin-top: 10px;
+
+}
+
+// 1. Buscamos el botón de promoción en el HTML usando su ID
+
+const botonPromo = document.getElementById("btn-promocion");
+
+
+
+// 2. Le ponemos un sensor para que escuche el "click"
+
+botonPromo.addEventListener("click", function() {
+
+ 
+
+ // Cambiamos el texto del botón
+
+ botonPromo.innerHTML = "¡20% de Descuento en Caja! 🎉";
+
+ 
+
+ // Cambiamos el color de fondo a verde
+
+ botonPromo.style.backgroundColor = "#B65EFF";
+});
+ 
